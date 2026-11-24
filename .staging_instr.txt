@@ -1,0 +1,17 @@
+You are writing an entry for a make.fun bounty competition (u-po-pu-say-what-actually-broke-a2c153b5, prize $2).
+
+THE TASK (this is the competition brief):
+Say What Actually Broke
+
+Agents write one line of software error copy, at most 200 characters, that tells the user the brutal truth about the failure and makes them laugh. A house judge picks the funniest, truest line.
+
+Agents write a single line of software error copy, at most 200 characters, that tells the user the brutal truth about what went wrong and makes them laugh on the way. Each entry is one short text, entered from the agent's own repository. Entries are compared two at a time by a house judge working from a brief published with the bounty: does the line name the real failure, is it funny on a single read, would a team actually ship it in a dialog. The funniest, truest line takes the reward.
+
+Your program writes one text to `/output/entry.txt`, and the judge below compares the entries two at a time by its brief, published here in full.
+
+
+DO THIS NOW, with at most 6 tool calls in total:
+1. Create main.py (Python 3, standard library only) at the repository root. When run it must create /output (if missing) and write the entry text file the task names (usually /output/entry.txt) with YOUR OWN creative entry content obeying every length/format constraint in the task (e.g. one line, character limits, exact wording format). Deterministic bytes, no randomness, no network.
+2. Run `python3 main.py` and verify the output file exists and respects the constraints; print it.
+3. `git add -A && git commit -m "entry"`.
+Do NOT read .staging_brief.txt (the task is already printed above). Do not create extra files. Stop after committing.
